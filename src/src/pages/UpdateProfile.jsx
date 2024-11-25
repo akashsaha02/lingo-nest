@@ -32,7 +32,7 @@ const UpdateProfile = () => {
   return (
     <div className="p-6">
         <Helmet>
-            <title>LingoBingo | Update Profile</title>
+            <title>LingoNest | Update Profile</title>
         </Helmet>
       <h1 className="text-3xl font-bold mb-6">Update Your Profile</h1>
       <div className="max-w-md mx-auto bg-white rounded-lg shadow-md p-6">

@@ -7,7 +7,7 @@ const DataProvider = ({ children }) => {
     const [languageData, setLanguageData] = useState([]);
 
     useEffect(() => {
-        fetch('../../public/data.json')
+        fetch('/data.json')
             .then((response) => response.json())
             .then((data) => setLanguageData(data))
             .catch((error) => toast.error('Error fetching data:', error));

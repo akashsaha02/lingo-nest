@@ -16,7 +16,7 @@ const LessonDetails = () => {
   return (
     <div className="p-4">
       <Helmet>
-        <title>LingoBingo | Lesson {lesson_no}</title>
+        <title>LingoNest | Lesson {lesson_no}</title>
       </Helmet>
       <h2 className="text-2xl font-bold">Lesson {lesson_no}</h2>
       <div className="grid grid-cols-1 gap-4">

@@ -11,7 +11,7 @@ const Profile = () => {
   return (
     <div className="p-6">
       <Helmet>
-        <title>LingoBingo | Profile</title>
+        <title>LingoNest | Profile</title>
       </Helmet>
       <h1 className="text-3xl font-bold mb-6 text-center">Welcome, {user?.displayName || 'User'}!</h1>
       <div className="max-w-md mx-auto bg-white rounded-lg shadow-md p-6">

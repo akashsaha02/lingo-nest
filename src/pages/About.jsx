@@ -71,7 +71,7 @@ const About = () => {
           We’d love to hear from you! Share your thoughts, suggestions, or just say hello.
         </p>
         <p className="mt-2 text-lg text-gray-600">
-          Contact us at <a href="mailto:support@lingobingo.com" className="text-teal-500 hover:text-teal-700">support@lingobingo.com</a>
+          Contact us at <a href="mailto:support@LingoNest.com" className="text-teal-500 hover:text-teal-700">support@LingoNest.com</a>
         </p>
       </section>
     </div>

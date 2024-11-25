@@ -52,7 +52,7 @@ const Login = () => {
     return (
         <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-teal-400 via-purple-500 to-pink-500">
             <Helmet>
-                <title>LingoBingo | Login</title>
+                <title>LingoNest | Login</title>
             </Helmet>
             <div className="w-full max-w-md p-8 bg-white rounded-lg shadow-xl">
                 {user ? (

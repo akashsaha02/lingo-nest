@@ -15,7 +15,7 @@ const ForgotPassword = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
         <Helmet>
-            <title>LingoBingo | Reset Password</title>
+            <title>LingoNest | Reset Password</title>
         </Helmet>
       <div className="w-full max-w-md p-8 space-y-4 bg-white rounded-lg shadow-lg">
         <h1 className="text-2xl font-bold text-center">Reset Password</h1>

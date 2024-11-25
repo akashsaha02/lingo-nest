@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div className="bg-gray-100">
       <Helmet>
-        <title>LingoBingo | Home</title>
+        <title>LingoNest | Home</title>
       </Helmet>
       {/* Banner/Slider Section */}
       <div
