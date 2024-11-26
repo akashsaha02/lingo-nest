@@ -1,5 +1,6 @@
 import { Footer } from "flowbite-react";
 import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
+import footerLogo from "../assets/lingonest-logo.png";
 
 const FooterComp = () => {
   const currentYear = new Date().getFullYear();
@@ -7,15 +8,12 @@ const FooterComp = () => {
     <Footer container className="bg-gray-800 text-gray-300">
       <div className="w-full">
         <div className="grid w-full justify-between sm:flex sm:justify-between md:grid-cols-1">
-          <div className="flex flex-col space-x-4">
-            <Footer.Brand
-              href="https://flowbite.com"
-              src="https://flowbite.com/docs/images/logo.svg"
-              alt="LingoNest Logo"
-              name="LingoNest"
-              className="text-accent-1"
-            />
-            <p className="">Lingo Nest</p>
+          <div className="flex flex-col gap-2">
+            <div className="flex gap-2 items-center">
+              <img src={footerLogo} alt="LingoNest" className="w-16 h-16" />
+              <h3 className="text-4xl font-bold text-accent-1 mt-2">LingoNest</h3>
+            </div>
+            <p className="mt-2 max-w-sm mb-6">LingoNest is a language learning platform designed to make vocabulary retention simple and enjoyable. Start your journey towards mastering a new language today!</p>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
             <div>

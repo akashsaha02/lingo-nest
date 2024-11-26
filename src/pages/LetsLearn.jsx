@@ -3,15 +3,15 @@ import LessonCard from "../components/LessonCard";
 import { Link } from "react-router-dom";
 
 const LetsLearn = () => (
-    <div className="p-4 bg-gray-950">
+    <div className="p-4 bg-gray-800">
         <Helmet>
             <title>Let's Learn - Lingo Bingo</title>
         </Helmet>
-        <h2 className="text-3xl font-extrabold text-center text-white tracking-tight mb-4">
+        <h2 className="text-5xl font-extrabold text-center text-white tracking-tight mt-5 mb-10">
             <span className="text-accent-1">Let's</span> Learn
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto gap-4">
             {[...Array(10).keys()].map(i => (
                 <LessonCard key={i} lesson={i + 1} />
             ))}
