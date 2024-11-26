@@ -2,7 +2,6 @@ import { useContext } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../providers/AuthProvider';
 import { Button, Navbar, Avatar } from "flowbite-react";
-import footerLogo  from '../assets/lingonest-logo.png';
 
 const Header = () => {
   const { user, logoutUser } = useContext(AuthContext);
