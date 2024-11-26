@@ -3,12 +3,15 @@ import LessonCard from "../components/LessonCard";
 import { Link } from "react-router-dom";
 
 const LetsLearn = () => (
-    <div className="p-4">
+    <div className="p-4 bg-gray-950">
         <Helmet>
             <title>Let's Learn - Lingo Bingo</title>
         </Helmet>
-        <h2 className="text-2xl font-bold">Let's Learn</h2>
-        <div className="grid grid-cols-2 gap-4">
+        <h2 className="text-3xl font-extrabold text-center text-white tracking-tight mb-4">
+            <span className="text-accent-1">Let's</span> Learn
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {[...Array(10).keys()].map(i => (
                 <LessonCard key={i} lesson={i + 1} />
             ))}
@@ -16,15 +19,15 @@ const LetsLearn = () => (
         <div className="mt-4 flex justify-center items-center flex-col gap-3">
             <h3 className="text-2xl mt-4 font-bold">Tutorial</h3>
             <iframe
-                width="560"
-                height="315"
+                width=""
+                height=""
                 src="https://www.youtube.com/embed/example" // Replace with actual link
                 title="YouTube video"
                 frameBorder="0"
                 allowFullScreen
             ></iframe>
             <Link to='/tutorial'
-                className="bg-teal-500 text-white px-4 py-2 my-5">
+                className="bg-accent-2 text-white px-4 py-2 my-5">
                 View More
             </Link>
         </div>

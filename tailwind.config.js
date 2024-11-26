@@ -1,8 +1,10 @@
+const flowbite = require("flowbite-react/tailwind");
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    flowbite.content(),
   ],
   theme: {
     extend: {
@@ -11,12 +13,12 @@ export default {
         'accent-2': '#586cec',
         'text-2': '#555555',
         'bg-2': '#e7e8ec',
-        
-
+        'bg-1': '#1c1c1c',
       },
     },
   },
   plugins: [
     require('daisyui'),
+    flowbite.plugin(),
   ],
-}
+};
