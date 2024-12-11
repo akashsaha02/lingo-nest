@@ -21,7 +21,7 @@ const Home = () => {
         className="relative h-[60vh] bg-gradient-to-r from-teal-700 to-blue-700 text-white flex items-center justify-center"
         data-aos="fade-up"
       >
-        <div className="text-center">
+        <div className="text-center max-w-7xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to Lingo Bingo!</h1>
           <p className="text-lg md:text-xl mb-6">
             Learn vocabulary in a fun and interactive way.
@@ -79,7 +79,7 @@ const Home = () => {
       </div>
 
       {/* Featured Lessons Section */}
-      <div className="py-16 px-6 md:px-20 bg-gray-800">
+      <div className="py-16 px-6 md:px-20 bg-gray-800 max-w-7xl mx-auto ">
         <h2 className="text-3xl font-bold text-center mb-6" data-aos="zoom-in">
           Featured Lessons
         </h2>
@@ -115,20 +115,23 @@ const Home = () => {
         className="py-16 px-6 md:px-20 bg-gradient-to-r from-blue-600 to-teal-600"
         data-aos="zoom-in"
       >
-        <h2 className="text-3xl font-bold text-center mb-6">What Our Users Say</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="p-6 bg-gray-700 rounded-lg shadow" data-aos="fade-right">
-            <p className="text-gray-300 italic">
-              "Lingo Bingo made learning Japanese so enjoyable! The lessons are simple yet
-              effective."
-            </p>
-            <p className="mt-4 font-semibold text-gray-100">- Sarah, Language Enthusiast</p>
-          </div>
-          <div className="p-6 bg-gray-700 rounded-lg shadow" data-aos="fade-left">
-            <p className="text-gray-300 italic">
-              "The vocabulary cards and tutorials are a game-changer for beginners like me."
-            </p>
-            <p className="mt-4 font-semibold text-gray-100">- John, Beginner Learner</p>
+        <div className="max-w-7xl mx-auto">
+
+          <h2 className="text-3xl font-bold text-center mb-6">What Our Users Say</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="p-6 bg-gray-700 rounded-lg shadow" data-aos="fade-right">
+              <p className="text-gray-300 italic">
+                "Lingo Bingo made learning Japanese so enjoyable! The lessons are simple yet
+                effective."
+              </p>
+              <p className="mt-4 font-semibold text-gray-100">- Sarah, Language Enthusiast</p>
+            </div>
+            <div className="p-6 bg-gray-700 rounded-lg shadow" data-aos="fade-left">
+              <p className="text-gray-300 italic">
+                "The vocabulary cards and tutorials are a game-changer for beginners like me."
+              </p>
+              <p className="mt-4 font-semibold text-gray-100">- John, Beginner Learner</p>
+            </div>
           </div>
         </div>
       </div>

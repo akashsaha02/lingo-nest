@@ -28,7 +28,7 @@ const Header = () => {
 
   return (
     <div className="sticky top-0 z-50 py-4 bg-bg-1  backdrop:blur-md">
-      <Navbar fluid className="bg-bg-1">
+      <Navbar fluid className="bg-bg-1 max-w-7xl mx-auto">
         <Navbar.Brand href="/">
           <span className="self-center whitespace-nowrap text-2xl lg:text-3xl font-bold text-accent-1">Lingo Nest</span>
         </Navbar.Brand>
