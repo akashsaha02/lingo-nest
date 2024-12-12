@@ -1,0 +1,23 @@
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" fill="none">
+  <!-- Background Gradient Circle -->
+  <defs>
+    <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#50E3C2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="95" stroke="url(#grad1)" stroke-width="10" fill="none" />
+
+  <!-- Modern Abstract Design -->
+  <path 
+    d="M50 120 C75 150, 125 150, 150 120 M50 80 C75 50, 125 50, 150 80 M70 100 C90 130, 110 130, 130 100"
+    stroke="#50E3C2" stroke-width="4" fill="none" stroke-linecap="round" />
+
+  <!-- Inner Orb with Shadow -->
+  <circle cx="100" cy="100" r="20" fill="#4A90E2" />
+  <circle cx="100" cy="100" r="20" fill="none" stroke="#FFFFFF" stroke-width="2" />
+</svg>

@@ -1,90 +1,92 @@
-import { Footer } from "flowbite-react";
-import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
-import footerLogo from "../assets/lingonest-logo.png";
+import { Link } from "react-router-dom";
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
-const FooterComp = () => {
-  const currentYear = new Date().getFullYear();
+const Footer = () => {
   return (
-    <Footer container className="bg-gray-800 text-gray-300">
-      <div className="w-full">
-        <div className="grid w-full justify-between sm:flex sm:justify-between md:grid-cols-1">
-          <div className="flex flex-col gap-2">
-            <div className="flex gap-2 items-center">
-              <img src={footerLogo} alt="LingoNest" className="w-16 h-16" />
-              <h3 className="text-4xl font-bold text-accent-1 mt-2">LingoNest</h3>
-            </div>
-            <p className="mt-2 max-w-sm mb-6">LingoNest is a language learning platform designed to make vocabulary retention simple and enjoyable. Start your journey towards mastering a new language today!</p>
+    <div className="bg-[#0d133c]">
+      <footer className="text-white py-10 max-w-[1440px] mx-auto">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+          {/* About Us */}
+          <div>
+            <h2 className="text-lg font-bold mb-4">About LingoNest</h2>
+            <p className="text-gray-400">
+              LingoNest connects donors with communities in need across Bangladesh, providing warm clothing during the harsh winter months. Together, we can make a difference.
+            </p>
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
-            <div>
-              <Footer.Title title="About" className="text-accent-1" />
-              <Footer.LinkGroup col>
-                <Footer.Link href="#" className="text-bg-2 hover:text-accent-1">
-                  Flowbite
-                </Footer.Link>
-                <Footer.Link href="#" className="text-bg-2 hover:text-accent-1">
-                  Tailwind CSS
-                </Footer.Link>
-              </Footer.LinkGroup>
-            </div>
-            <div>
-              <Footer.Title title="Follow us" className="text-accent-1" />
-              <Footer.LinkGroup col>
-                <Footer.Link href="#" className="text-bg-2 hover:text-accent-1">
-                  Github
-                </Footer.Link>
-                <Footer.Link href="#" className="text-bg-2 hover:text-accent-1">
-                  Discord
-                </Footer.Link>
-              </Footer.LinkGroup>
-            </div>
-            <div>
-              <Footer.Title title="Legal" className="text-accent-1" />
-              <Footer.LinkGroup col>
-                <Footer.Link href="#" className="text-bg-2 hover:text-accent-1">
-                  Privacy Policy
-                </Footer.Link>
-                <Footer.Link href="#" className="text-bg-2 hover:text-accent-1">
-                  Terms & Conditions
-                </Footer.Link>
-              </Footer.LinkGroup>
-            </div>
+
+          {/* Quick Links */}
+          <div>
+            <h2 className="text-lg font-bold mb-4">Quick Links</h2>
+            <ul className="space-y-2">
+              <li>
+                <Link to="/" className="text-gray-400 hover:text-white">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/donation-campaigns" className="text-gray-400 hover:text-white">
+                  Donation Campaigns
+                </Link>
+              </li>
+              <li>
+                <Link to="/help" className="text-gray-400 hover:text-white">
+                  How to Help
+                </Link>
+              </li>
+              <li>
+                <Link to="/dashboard" className="text-gray-400 hover:text-white">
+                  Dashboard
+                </Link>
+              </li>
+            </ul>
           </div>
-        </div>
-        <Footer.Divider />
-        <div className="w-full sm:flex sm:items-center sm:justify-between">
-          <Footer.Copyright href="#" by="LingoNest™" year={currentYear} className="text-bg-2" />
-          <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-            <Footer.Icon
-              href="#"
-              icon={BsFacebook}
-              className="text-bg-2 hover:text-accent-1 transition-colors duration-300"
-            />
-            <Footer.Icon
-              href="#"
-              icon={BsInstagram}
-              className="text-bg-2 hover:text-accent-1 transition-colors duration-300"
-            />
-            <Footer.Icon
-              href="#"
-              icon={BsTwitter}
-              className="text-bg-2 hover:text-accent-1 transition-colors duration-300"
-            />
-            <Footer.Icon
-              href="#"
-              icon={BsGithub}
-              className="text-bg-2 hover:text-accent-1 transition-colors duration-300"
-            />
-            <Footer.Icon
-              href="#"
-              icon={BsDribbble}
-              className="text-bg-2 hover:text-accent-1 transition-colors duration-300"
-            />
+
+          {/* Contact Information */}
+          <div>
+            <h2 className="text-lg font-bold mb-4">Contact Us</h2>
+            <p className="text-gray-400">
+              <span className="block mb-2">Email: support@LingoNest.org</span>
+              <span className="block mb-2">Phone: +880-123-456-789</span>
+              <span className="block">Address: Dhaka, Bangladesh</span>
+            </p>
           </div>
         </div>
-      </div>
-    </Footer>
+
+        {/* Social Media and Copyright */}
+        <div className="mt-10 border-t border-gray-700 pt-6 text-center">
+          <div className="flex justify-center space-x-6 mb-4">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white"
+            >
+              <FaFacebookF size={24} />
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white"
+            >
+              <FaTwitter size={24} />
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white"
+            >
+              <FaInstagram size={24} />
+            </a>
+          </div>
+          <p className="text-gray-400 text-sm">
+            &copy; {new Date().getFullYear()} LingoNest. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
   );
 };
 
-export default FooterComp;
+export default Footer;
